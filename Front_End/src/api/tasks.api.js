@@ -1,5 +1,4 @@
-import { axios } from 'axios';
-
-export const getALLTasks =()=>{
-    return axios.get('http://localhost:8000/user/register/')
+import axios from 'axios';
+export const getALLTasks = () => {
+    return axios.get('http://localhost:5173/')
 }

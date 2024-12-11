@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-CORS_ORIGIN_WHITELIST = [
+CORS_ORIGIN_WHITELIST = ["http://localhost:5173"
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
