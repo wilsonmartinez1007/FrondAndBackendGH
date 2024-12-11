@@ -1,11 +1,13 @@
 import { useEffect } from "react";
-
+import { getALLTasks } from '../api/tasks.api';
 export function TasksList() {
     useEffect(()=>{
-        console.log('pagina cargada')
-    }, [])
-    return(
-        <div>TasksList</div>
-    )
+            function loadTasks(){
+                const res = getALLTasks();
+                console.log(res);
+            }
+        loadTasks();
+    }, []);
+    return <div>TasksList</div>;
     
 }
